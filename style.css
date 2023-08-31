@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+
+}
+
+.img {
+    max-width: 100%;
+
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.content{
+    min-height: 80px;
+    background-color:#0031AF ;
+}
+
+.menu {
+    position: absolute;
+    top:0x;
+    padding: 10px 35px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 253px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .menunav ul li {
+    position: relative;
+    float:left;
+}
+
+.menu .menunav ul li a {
+    padding: 10px 35px;
+    color: white;
+    font-size: 20px ;
+    padding: 10px 35px;
+    display:block;
+    font-weight: 700px;
+}
+
+.menu .menunav ul li a:hover{
+    color: #FE0102;
+}
+
+#menu {
+    display:none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+/*portada*/
+
+.portada{
+    position: absolute; 
+    padding: 38px 148px;
+    top:0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fondoportada{
+    background-image:url(imagenes/C.png);
+    background-position: center center;
+    background-repeat: no-repeat;  
+    background-size: cover;  
+    height: 599px;
+    display: flex;
+    padding: 38px 148px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.texto{
+    max-width: 50%;
+    margin-right: 78px;
+    
+}
+
+.texto h1 {
+    color:#FE0102;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.texto p{
+    font-size:20px;
+    color:#0031AF;
+    margin-bottom:35px;
+    font-weight: bold;
+}
+
+.portada-img {
+    width:100%;
+    text-align: center;
+}
+
+.btn-1 {
+    display:inline-block;
+    margin:35px 0;
+    padding: 13px 35px;
+    background-color: #0031AF;
+    color:white;
+    border-radius: 20px;
+}
+
+.btn-1:hover{
+    background-color:#FE0102;
+}
+
+
+/*Servicios*/
+
+.servicio {
+    display:block;
+    padding: 43px 35px;;
+    align-items:center;
+    justify-content: center;
+}
+
+.programas, .experiencia {
+    text-align: center;
+}
+
+.programas h2, .experiencias h2 {
+    color:#FE0102;
+    margin-bottom: 43px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.programas p {
+    color:#0031AF;
+    font-size:24px;
+    margin-bottom:43px;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+}
+.niveles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kids{
+    background-image:url(imagenes/kids.png); 
+    background-position:center; 
+    background-size: cover; 
+    width: 320px;
+    height: 320px
+}
+
+.boton {
+    display:inline-block;
+    margin: 270px 105.5px 20px;
+    padding:7px 20px;
+    background-color:#FE0102;
+    color:white;
+    font-weight: normal;
+    border-radius: 20px;
+}
+
+.junior{
+    background-image:url(imagenes/JUNIOR.png); 
+    background-position:center; 
+    background-size: cover; 
+    width: 320px;
+    height: 320px
+}
+
+.teens{
+    background-image:url(imagenes/TEENS.png); 
+    background-position:center; 
+    background-size: cover; 
+    width: 320px;
+    height: 320px
+}
+
+.adults{
+    background-image:url(imagenes/ADULTS.png); 
+    background-position:center; 
+    background-size: cover; 
+    width: 320px;
+    height: 320px
+}
+
+  /*experiencia*/
+
+.experiencia {
+ display:block;
+ padding: 0px 35px 43px 35px;
+ align-items:center;
+ justify-content: center;
+}
+
+.opiniones {
+    display: flex;
+    align-items: flex-start;
+    gap: 34px;
+}
+
+.otilia img, .valeria img, .javier img{
+    margin-bottom: 12px;
+}
+.otilia h3, .valeria h3, .javier h3 {
+    color:#FE0102;
+    margin-bottom: 13px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.otilia p, .valeria p, .javier p {
+    color:#0031AF;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*formulario*/
+
+.footer-bg{
+    background-color: #0031AF;
+    padding:43px 35px 43px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-bg h2{
+    color:#ffffff;
+    margin-bottom: 13px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-bg p{
+    color:#ffffff;
+    margin-bottom: 13px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.campo-1 {
+    margin-bottom: 15px;
+}
+
+.campo{
+    margin: 5px;
+    padding: 20px 15px;
+    width: 250px;
+    background-color: #ffffff;
+    border: 1px solid #021137;
+    outline:none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.botonform{
+    display: flex;
+    padding:7px 20px;
+    background-color:#FE0102;
+    color:white;
+    font-weight: normal;
+    border-radius: 10px;
+}
+.textarea{
+    width: 520px !important;
+}
+
+
+@media(max-width: 767px) {
+
+    .content {
+        min-height: 80px;
+    }
+    
+    .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    }
+    .menu{
+        top: 0;
+        padding: 10px 35px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .menunav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color: #0031AF;
+    }
+
+    .menu .menunav ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .menunav {
+        display: initial;
+
+    }
+}
