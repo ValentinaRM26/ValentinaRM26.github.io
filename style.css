@@ -56,7 +56,6 @@ body {
     padding: 10px 35px;
     color: white;
     font-size: 20px ;
-    padding: 10px 35px;
     display:block;
     font-weight: 700px;
 }
@@ -81,9 +80,9 @@ body {
 
 /*portada*/
 
+
 .portada{
     position: absolute; 
-    padding: 38px 148px;
     top:0;
     left: 0;
     right: 0;
@@ -98,16 +97,18 @@ body {
     background-repeat: no-repeat;  
     background-size: cover;  
     height: 599px;
-    display: flex;
+}
+
+.fondo{
+    display:flex;
     padding: 38px 148px;
+    gap:130px;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .texto{
-    max-width: 50%;
-    margin-right: 78px;
-    
+    max-width: 100%;
 }
 
 .texto h1 {
@@ -127,7 +128,7 @@ body {
 
 .portada-img {
     width:100%;
-    text-align: center;
+
 }
 
 .btn-1 {
@@ -151,6 +152,7 @@ body {
     padding: 43px 35px;;
     align-items:center;
     justify-content: center;
+    text-align: center;
 }
 
 .programas, .experiencia {
@@ -167,6 +169,7 @@ body {
 .programas p {
     color:#0031AF;
     font-size:24px;
+    text-align: center;
     margin-bottom:43px;
     font-family:'Roboto', sans-serif;
     font-weight: bold;
@@ -174,7 +177,8 @@ body {
 .niveles{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
+    gap: 30px;
 }
 
 .kids{
@@ -186,7 +190,7 @@ body {
 }
 
 .boton {
-    display:inline-block;
+    display:flex;
     margin: 270px 105.5px 20px;
     padding:7px 20px;
     background-color:#FE0102;
@@ -275,9 +279,10 @@ body {
     font-weight: bold;
 }
 .form{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 .campo-1 {
@@ -296,8 +301,10 @@ body {
     font-size: 14px;
 }
 
-.botonform{
-    display: flex;
+.button{
+    display:flex;
+    margin:auto;
+    text-align: center;
     padding:7px 20px;
     background-color:#FE0102;
     color:white;
@@ -307,8 +314,11 @@ body {
 .textarea{
     width: 520px !important;
 }
+.abrir-menunav, .cerrar-menunav, .logo2 {
+    display:none;
+}
 
-
+/*vista mobile*/
 @media(max-width: 767px) {
 
     .content {
@@ -318,6 +328,10 @@ body {
     .container {
     max-width: 1400px;
     margin: 0 auto;
+    }
+    .abrir-menunav, .cerrar-menunav{
+        display: block;
+        padding: 0;
     }
     .menu{
         top: 0;
@@ -345,4 +359,20 @@ body {
         display: initial;
 
     }
+
+    .fondoportada{
+        display: grid;
+        grid-template-columns:repeat 1fr ;
+        padding: 43px 35px;
+    }
+
+    .programas{
+        padding: 43px 35px;
+    }
+
+    .niveles {
+        display: grid;
+        grid-template-columns:repeat 1fr ;
+    }
+
 }

@@ -6,6 +6,7 @@
     <title>British House</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagenes/A.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
@@ -13,23 +14,30 @@
             <div class="menu container">
                 <a href="#" ><img src="imagenes/B.png" class="logo" alt=""> </a> 
                 <input type="checkbox" id="menu"/>
-                <label for="menu">
-                    <img class="menu-icono" src="imagenes/menu.png" alt="">
-                </label>
-                <nav class="menunav">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Cusos online</a></li>
-                        <li><a href="#">Convenios</a></li>
-                    </ul>
-                </nav>
+                <button id="abrir" class="abrir-menunav"><i class="bi bi-list"></i></button>
+            
+                <div>
+                    <div class="menunav">
+                        <a class="logo2" href="#" ><img src="imagenes/B.png" class="logo" alt=""> </a> 
+                        <button id="cerrar" class="cerrar-menunav"><i class="bi bi-x"></i></button>
+            
+                    </div>
+                    <nav class="menunav">
+                        <ul>
+                            <li><a href="#">Inicio</a></li>
+                            <li><a href="#">Nosotros</a></li>
+                            <li><a href="#">Cusos online</a></li>
+                            <li><a href="#">Convenios</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="portada">
         <div class="fondoportada">
+            <div class="fondo container">
                 <div class="texto">
                     <h1>British House International</h1>
                     <p>
@@ -38,13 +46,14 @@
                     <a href="#" class="btn-1">Acceder</a>
                 </div>
                 <div class="portada-img">
-                    <img  src="imagenes/niños.png" alt="">
+                    <img  src="imagenes/D.png" alt="">
                 </div> 
+            </div>
         </div> 
     </section>
 
     <section id="servicio">
-        <div class="servicio">
+        <div class="servicio container">
             <div class="programas">
                 <h2> NUESTROS PROGRAMAS</h2>
                 <p>
@@ -69,31 +78,33 @@
     </section>
 
     <section id="experiencia">
-        <div class="experiencia">
-            <div class="experiencias">
-                <h2>EXPERIENCIAS</h2>
-            </div>
-            <div class="opiniones">
-                <div class="otilia">
-                    <img src="imagenes/OTILIA.png" alt="">
-                    <h3> OTILIA Y FAMILIA</h3>
-                    <p>
-                        Nuestra brillante alumna Otilia y su familia nos comentan orgullosos el avance en el aprendizaje de Otilia y los satisfechos que están por haber escogido BRITISH HOUSE INTERNATIONAL para la educación de su menor hija
-                    </p>
+        <div class="experiencia container">
+            <div class="opinion">
+                <div class="experiencias">
+                    <h2>EXPERIENCIAS</h2>
                 </div>
-                <div class="valeria">
-                    <img src="imagenes/VALERIA.png" alt="">
-                    <h3> VALERIA</h3>
-                    <p>
-                        Valeria Carolina Gonzales lleva estudiando ya más de año y medio en la institución y nos recomienda como la mejor opción para estudiar inglés
-                    </p>
-                </div>
-                <div class="javier">
-                    <img src="imagenes/JAVIER.png" alt="">
-                    <h3> JAVIER PADILLA</h3>
-                    <p>
-                        Javier Padilla Echevarría nos cuenta sobre la excelente decisión que fue elegir BRITISH HOUSE INTERNATIONAL para  aprender inglés de la manera más fácil y rápida ¡Y como aprender inglés le abrió oportunidades en lo laboral y personal!
-                    </p>
+                <div class="opiniones">
+                    <div class="otilia">
+                        <img src="imagenes/OTILIA.png" alt="">
+                        <h3> OTILIA Y FAMILIA</h3>
+                        <p>
+                            Nuestra brillante alumna Otilia y su familia nos comentan orgullosos el avance en el aprendizaje de Otilia y los satisfechos que están por haber escogido BRITISH HOUSE INTERNATIONAL para la educación de su menor hija
+                        </p>
+                    </div>
+                    <div class="valeria">
+                        <img src="imagenes/VALERIA.png" alt="">
+                        <h3> VALERIA</h3>
+                        <p>
+                            Valeria Carolina Gonzales lleva estudiando ya más de año y medio en la institución y nos recomienda como la mejor opción para estudiar inglés
+                        </p>
+                    </div>
+                    <div class="javier">
+                        <img src="imagenes/JAVIER.png" alt="">
+                        <h3> JAVIER PADILLA</h3>
+                        <p>
+                            Javier Padilla Echevarría nos cuenta sobre la excelente decisión que fue elegir BRITISH HOUSE INTERNATIONAL para  aprender inglés de la manera más fácil y rápida ¡Y como aprender inglés le abrió oportunidades en lo laboral y personal!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,7 +127,7 @@
                     <input class="campo" type="email" placeholder="Correo">
                 </div>
                 <textarea class="campo" cols="30" rows="10" placeholder="Texto"></textarea>
-                <input type="submit" value="Enviar" class="botonform">
+                <input type="submit" value="Enviar" class="button">
             </form>
         </div>
     </footer>
